@@ -10,12 +10,28 @@ namespace GlugNetOctocat
     {
         static void Main(string[] args)
         {
-            DateTime dt = new DateTime(1997, 1, 12);
             OctoCat myOctocat = new OctoCat();
+
+            Console.WriteLine("What would you like to name your Octocat?");
+            string catName=Console.ReadLine();
+
+            Console.WriteLine("What is " + catName + "'s birth year?");
+            int birthYear = int.Parse(Console.ReadLine());
+        
+            Console.WriteLine("In what month was " + catName + " born?");
+            int birthMonth = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("What day within " + birthMonth + " in " + birthYear + " was " + catName + " born?");
+            int birthDay = int.Parse(Console.ReadLine());
+
+            DateTime dt = new DateTime(birthYear, birthMonth, birthDay );
+
             myOctocat.Name = "Git Hub cat";
-            myOctocat.age = 20;
             myOctocat.Birthday = dt;
-            //Console.WL...
+            int age =myOctocat.GetAge(DateTime.Now,myOctocat.Birthday );
+
+            Console.WriteLine(catName + " is " + age + " years old today.");
+            Console.ReadLine();
         }
     }
 }

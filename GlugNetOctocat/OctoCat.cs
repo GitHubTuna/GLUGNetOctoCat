@@ -8,13 +8,19 @@ namespace GlugNetOctocat
 {
     class OctoCat
     {
-        //type 'prop' and then tab tab
-        //public int MyProperty { get; set; }
-        
-        //Hey GitHubTuna... do you think we could have this class just have birthdate and then compute the age?
-        
+
         public string Name { get; set; }
-        public int age { get; set; }
-        public DateTime  Birthday { get; set; }
+        public DateTime Birthday { get; set; }
+
+        public int GetAge(DateTime reference, DateTime birthday)
+        {
+            int age = reference.Year - birthday.Year;
+            if (reference < birthday.AddYears(age)) age--;
+
+            return age;
+        }
+
+
     }
 }
+
