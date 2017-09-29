@@ -10,6 +10,12 @@ namespace GlugNetOctocat
     {
         static void Main(string[] args)
         {
+            DateTime dt = new DateTime(1997, 1, 12);
+            OctoCat myOctocat = new OctoCat();
+            myOctocat.Name = "Git Hub cat";
+            myOctocat.age = 20;
+            myOctocat.Birthday = dt;
+            //Console.WL...
         }
     }
 }
