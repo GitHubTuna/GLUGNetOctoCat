@@ -74,51 +74,52 @@ namespace GlugNetOctocat
 
         public static int GetMonth(string value)
         {
-            if (value == "January")
+            value = value.ToUpper();
+            if (value == "JANUARY")
             {
                 return 1;
             }
-            if (value == "February")
+            if (value == "FEBRUARY")
             {
                 return 2;
             }
-            if (value == "March")
+            if (value == "MARCH")
             {
                 return 3;
             }
-            if (value == "April")
+            if (value == "APRIL")
             {
                 return 4;
             }
-            if (value == "May")
+            if (value == "MAY")
             {
                 return 5;
             }
-            if (value == "June")
+            if (value == "JUNE")
             {
                 return 6;
             }
-            if (value == "July")
+            if (value == "JULY")
             {
                 return 7;
             }
-            if (value == "August")
+            if (value == "AUGUST")
             {
                 return 8;
             }
-            if (value == "September")
+            if (value == "SEPTEMBER")
             {
                 return 9;
             }
-            if (value == "October")
+            if (value == "OCTOBER")
             {
                 return 10;
             }
-            if (value == "November")
+            if (value == "NOVEMBER")
             {
                 return 11;
             }
-            if (value == "December")
+            if (value == "DECEMBER")
             {
                 return 12;
             }
