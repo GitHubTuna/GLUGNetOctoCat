@@ -33,7 +33,7 @@ namespace GlugNetOctocat
             string yearInWordsPartTwo = NumberToWords(rightValue);
             string monthName = System.Globalization.CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(birthMonth);
 
-            Console.WriteLine("What day within " + monthName + " " + yearInWordsPartOne + "-" + yearInWordsPartTwo + " was " + catName + " born?");
+            Console.WriteLine("What day within " + monthName + ", " + yearInWordsPartOne + "-" + yearInWordsPartTwo + " was " + catName + " born?");
             int birthDay = int.Parse(Console.ReadLine());
 
             DateTime dt = new DateTime(birthYear, birthMonth, birthDay );
