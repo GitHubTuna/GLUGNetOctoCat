@@ -6,6 +6,7 @@ This is a very small console application that allows a user to name an octocat a
 Code focuses on:
 1)  Text editing and concatenation
 2)  Getting user input within a console application
-3)  Having your app attempt to carry on a normal sounding conversation as it captures information from the user.  
+3)  Having your app attempt to carry on a normal sounding conversation as it captures information from the user
+4)  Inclused a small Try{} Catch{} sample for working with situations where user input may cause issues for your console app
 
 Enjoy!
