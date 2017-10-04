@@ -9,7 +9,7 @@ namespace GlugNetOctocat
     class Program
     {
         static void Main(string[] args)
-        {
+        {//TEST COMMIT
             OctoCat myOctocat = new OctoCat();
 
             Console.WriteLine("What would you like to name your Octocat?");
